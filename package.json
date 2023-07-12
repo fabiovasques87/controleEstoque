@@ -1,0 +1,20 @@
+{
+  "name": "controleestoqueatual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "tsc-init": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1"
+  }
+}
