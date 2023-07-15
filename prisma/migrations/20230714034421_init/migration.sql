@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE "Produto" ALTER COLUMN "LocalizacaoEstoqueProd" DROP NOT NULL,
+ALTER COLUMN "PrecoCompraProd" DROP NOT NULL,
+ALTER COLUMN "PrecoVendaProd" DROP NOT NULL,
+ALTER COLUMN "caracteristicaProd" DROP NOT NULL,
+ALTER COLUMN "nomeProd" DROP NOT NULL,
+ALTER COLUMN "qtdAtualProd" DROP NOT NULL,
+ALTER COLUMN "qtdMinimaProd" DROP NOT NULL;

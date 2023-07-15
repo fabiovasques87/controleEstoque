@@ -4,12 +4,13 @@ import { Request,  Response} from 'express';
 import * as ProdutoModel from '../models/Produto';
 
 
-
 export const getProdutos = async (req: Request, res: Response): Promise<void> => {
+
     try {
       const produtos = await ProdutoModel.getProdutos();
       res.status(200).json(produtos);
     } catch (error) {
+      console.error(error);
       res.status(500).json({ error: 'Erro ao buscar produtos.' });
     }
   };
@@ -19,10 +20,22 @@ export const getProdutos = async (req: Request, res: Response): Promise<void> =>
     try {
       const novoProduto = await ProdutoModel.criarProduto(req.body);
       res.status(201).json(novoProduto);
+      console.log(novoProduto);
     } catch (error) {
-      res.status(500).json({ error: 'Erro ao criar produto.' });
+      console.error(error);
+      res.status(500).json({ error: 'Erro ao criar produto!' });
     }
   };
+
+
+
+    // try {
+    //   const novoProduto = await ProdutoModel.criarProduto(req.body);
+    //   res.status(201).json(novoProduto);
+    // } catch (error) {
+    //   res.status(500).json({ error: 'Erro ao criar produto!' });
+    // }
+  // };
 
 
   
