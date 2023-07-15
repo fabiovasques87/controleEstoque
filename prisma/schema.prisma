@@ -21,6 +21,7 @@ model Produto {
   qtdMinimaProd           Int 
   PrecoVendaProd          Float
   PrecoCompraProd         Float
-  DataEntradaProd       DateTime
+  DataEntradaProd         DateTime
   LocalizacaoEstoqueProd  String  @db.VarChar(50)
+  Campoqrcode             String  @unique 
 }

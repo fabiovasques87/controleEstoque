@@ -26,7 +26,8 @@ export const criarProduto = async (dadosProduto: Produto) => {
       PrecoVendaProd: +dadosProduto.PrecoVendaProd,
       PrecoCompraProd: +dadosProduto.PrecoCompraProd,
       DataEntradaProd: new Date(dadosProduto.DataEntradaProd),
-      LocalizacaoEstoqueProd: dadosProduto.LocalizacaoEstoqueProd
+      LocalizacaoEstoqueProd: dadosProduto.LocalizacaoEstoqueProd,
+      CampoQrcode: dadosProduto.CampoQrcode
     }
   });
 }
